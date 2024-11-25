@@ -1,0 +1,208 @@
+* {
+  border: none;
+  border-radius: 8px;
+  min-height: 0;
+  font-family: "Cartograph CF", "Font Awesome 6 Pro";
+  font-size: 13px;
+}
+/** {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: FiraCode Nerd Font;
+  font-size: 13px;
+}*/
+window#waybar {
+  background-color: transparent;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+window#waybar.empty #window {
+  background-color: transparent;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+window#waybar.hidden {
+  opacity: 0.5;
+}
+
+#workspaces {
+  background-color: transparent;
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+
+#workspaces button {
+  all: initial;
+  /* Remove GTK theme values (waybar #1351) */
+  min-width: 0;
+  /* Fix weird spacing in materia (waybar #450) */
+  box-shadow: inset 0 -2px transparent;
+  /* Use box-shadow instead of border so the text isn't offset */
+  padding: 3px 5px;
+  margin: 4px 2px;
+  border-radius: 4px;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+}
+
+#workspaces button.active,
+#workspaces button.active:hover {
+  color: #1e1e2e;
+  background-color: #cdd6f4;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: #cdd6f4;
+  background-color: #45475a;
+  border-radius: 15px;
+  transition: border-radius 1s;
+}
+
+#workspaces button.urgent {
+  background-color: #cba6f7;
+}
+#window {
+  border-radius: 4px;
+  margin: 4px 2px;
+  /*  padding: 4px 8px;*/
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2.5px;
+  color: #1e1e2e;
+  background-color: #cba6f7;
+}
+#cpu {
+  border-radius: 4px 0px 0px 4px;
+  /*border-radius: 4px;*/
+  margin-left: 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  /*  padding: 4px 8px;*/
+  padding-left: 6px;
+  padding-right: 12px;
+  padding-top: 0.5px;
+  color: #1e1e2e;
+  background-color: #cba6f7;
+}
+#pulseaudio {
+  border-radius: 4px;
+  margin: 4px 2px;
+  padding: 4px 8px;
+  color: #1e1e2e;
+  background-color: #cba6f7;
+}
+#memory {
+  border-radius: 0px 4px 4px 0px;
+  margin-right: 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  /*  padding: 4px 8px;*/
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2.5px;
+  color: #1e1e2e;
+  background-color: #cba6f7;
+}
+#keyboard-state,
+#battery,
+#bluetooth {
+  border-radius: 4px 0px 0px 4px;
+  /*border-radius: 4px;*/
+  margin-left: 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  /*  padding: 4px 8px;*/
+  padding-top: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #1e1e2e;
+  background-color: #cba6f7;
+}
+#network {
+  border-radius: 0px 4px 4px 0px;
+  margin-right: 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-top: 2px;
+  padding-left: 4px;
+  padding-right: 1px;
+  color: #1e1e2e;
+  background-color: #1e1e2e;
+}
+#clock {
+  border-radius: 4px;
+  margin: 4px 2px;
+  padding: 4px 8px;
+  background-color: #cba6f7;
+  color: #181825;
+}
+
+#custom-power {
+  border-radius: 4px;
+  margin: 4px 2px;
+  padding: 4px 8px;
+  color: #1e1e2e;
+  background-color: #cba6f7;
+}
+#custom-notification {
+  border-radius: 4px;
+  margin: 4px 2px;
+  padding: 4px 8px;
+  color: #1e1e2e;
+  background-color: #cba6f7;
+}
+#custom-logo1 {
+  padding-right: 7px;
+  padding-left: 7px;
+  margin-left: 5px;
+  font-size: 13px;
+  border-radius: 8px 0px 0px 8px;
+  color: #1793d1;
+}
+
+#battery {
+  background-color: #cba6f7;
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  background-color: #cba6f7;
+  color: #ffff00;
+}
+
+#battery.charging {
+  background-color: #cba6f7;
+  color: #181825;
+}
+
+#network {
+  background-color: #cba6f7;
+  padding-right: 12px;
+}
+
+#clock {
+  background-color: #cba6f7;
+}
+
+#tray {
+  border-radius: 4px;
+  margin: 4px 2px;
+  padding: 4px 8px;
+  color: #1e1e2e;
+  background-color: #cba6f7;
+}
+
+tooltip {
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #131822;
+}
+
+tooltip label {
+  padding: 5px;
+  background-color: #131822;
+}
